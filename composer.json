@@ -1,0 +1,34 @@
+{
+  "name": "sokoley/module-custom-sitemap",
+  "type": "magento2-module",
+  "version": "2.3.0",
+  "description": "Allows to split standard sitemap into product-, categories- and cms-pages-sitemaps",
+  "authors": [
+    {
+      "name": "Sokoley",
+      "email": "sokoley@yandex.ru",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "magento",
+    "sitemap",
+    "split",
+    "devide",
+    "custom"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Sokoley\\CustomSitemap\\": ""
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sokoley" translate="label" sortOrder="100">
+            <label>Sokoley Extentions</label>
+        </tab>
+        <section id="sokoley_custom_sitemap" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>sokoley</tab>
+            <label>Custom Sitemap</label>
+            <resource>Sokoley_CustomSitemap::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInStore="1">
+                <label>General Setting</label>
+                <field id="is_active" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1">
+                    <label>Is Active</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="products_sitemap" translate="label" type="text" sortOrder="10" showInDefault="1" showInStore="1">
+                    <label>Products Sitemap</label>
+                    <comment>e.g. products.xml</comment>
+                </field>
+                <field id="categories_sitemap" translate="label" type="text" sortOrder="10" showInDefault="1" showInStore="1">
+                    <label>Categories Sitemap</label>
+                    <comment>e.g. categories.xml</comment>
+                </field>
+                <field id="cms_pages_sitemap" translate="label" type="text" sortOrder="10" showInDefault="1" showInStore="1">
+                    <label>CMS Pages Sitemap</label>
+                    <comment>e.g. cms.xml</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
